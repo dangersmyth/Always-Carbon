@@ -1,0 +1,17 @@
+{
+  "name": "always-carbon-website",
+  "version": "1.0.0",
+  "description": "Always Carbon - Professional Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "tailwindcss -i ./src/assets/css/input.css -o ./public/css/style.css --watch",
+    "dev": "live-server public --port=8080",
+    "build-prod": "tailwindcss -i ./src/assets/css/input.css -o ./public/css/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "live-server": "^1.2.2"
+  },
+  "keywords": ["biochar", "carbon-removal", "sustainability"],
+  "author": "Always Carbon"
+}

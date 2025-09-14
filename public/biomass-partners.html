@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomass Partners - Transform Waste into Revenue | Always Carbon</title>
+    <meta name="description" content="Turn waste biomass into biochar revenue. Simple technology, verified results, shared revenue. Transform disposal costs into profit centers.">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50" x-data="{ mobileMenuOpen: false }">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="./images/Always Carbon Logo.png" alt="Always Carbon Logo" class="h-10 w-auto mr-3">
+                    <span class="font-heading font-bold text-xl text-forest-green">Always Carbon</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="./index.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Home</a>
+                    <a href="./about.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">About</a>
+                    <div class="relative" x-data="{ servicesOpen: false }">
+                        <button @click="servicesOpen = !servicesOpen" class="font-medium text-forest-green font-semibold flex items-center">
+                            Services
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="servicesOpen" @click.away="servicesOpen = false" class="absolute top-full left-0 bg-white shadow-lg rounded-md py-2 w-64 z-10">
+                            <a href="./biomass-partners.html" class="block px-4 py-2 text-sm text-forest-green font-semibold bg-gray-50">Biomass Partners</a>
+                            <a href="./carbon-credits.html" class="block px-4 py-2 text-sm text-neutral-dark hover:bg-gray-50">Carbon Credit Buyers</a>
+                        </div>
+                    </div>
+                    <a href="./projects.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Projects</a>
+                    <a href="./technology.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Technology</a>
+                    <a href="./blog.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Resources</a>
+                    <a href="./contact.html" class="btn-primary">Contact Us</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div x-show="mobileMenuOpen" class="md:hidden py-4 border-t">
+                <a href="./index.html" class="block py-2 text-neutral-dark hover:text-forest-green">Home</a>
+                <a href="./about.html" class="block py-2 text-neutral-dark hover:text-forest-green">About</a>
+                <a href="./biomass-partners.html" class="block py-2 text-forest-green font-semibold">Biomass Partners</a>
+                <a href="./carbon-credits.html" class="block py-2 text-neutral-dark hover:text-forest-green">Carbon Credits</a>
+                <a href="./projects.html" class="block py-2 text-neutral-dark hover:text-forest-green">Projects</a>
+                <a href="./technology.html" class="block py-2 text-neutral-dark hover:text-forest-green">Technology</a>
+                <a href="./blog.html" class="block py-2 text-neutral-dark hover:text-forest-green">Resources</a>
+                <a href="./contact.html" class="block py-2 text-forest-green font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 section-padding bg-gradient-to-r from-forest-green to-green-700 text-white">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="font-heading text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Turn Waste Costs into Revenue Streams
+                    </h1>
+                    <p class="text-xl mb-8 text-green-100 leading-relaxed">
+                        Transform your agricultural waste biomass into biochar and generate new revenue through simple, cost-effective pyrolysis technology.
+                    </p>
+                    <a href="#partnership-form" class="btn-secondary">Start Your Partnership Assessment</a>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Agricultural waste biomass" class="rounded-lg shadow-2xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Benefits -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-16 text-neutral-dark">
+                Partnership Benefits
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 bg-forest-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-neutral-dark mb-3">Transform Disposal Costs</h3>
+                    <p class="text-neutral-light">Turn waste disposal expenses into revenue-generating assets</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 bg-clean-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-neutral-dark mb-3">Low-Cost Technology</h3>
+                    <p class="text-neutral-light">Simple, low-cost, off-the-shelf continuous process pyrolysis ovens</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 bg-warm-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-neutral-dark mb-3">Technical Support</h3>
+                    <p class="text-neutral-light">Full guidance and revenue sharing throughout the process</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 bg-forest-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-neutral-dark mb-3">Verified Results</h3>
+                    <p class="text-neutral-light">Third-party certified carbon removal and quality assurance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment & Technology Benefits -->
+    <section class="section-padding bg-forest-green text-white">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6">
+                        Simple, Low-Cost Technology
+                    </h2>
+                    <p class="text-lg mb-6 text-green-100 leading-relaxed">
+                        We work with any equipment manufacturer and can recommend suppliers of simple, low-cost, off-the-shelf, continuous process pyrolysis ovens. No complex technology requirements or expensive custom solutions.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 mr-4 mt-1 text-green-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-heading font-bold text-lg text-white mb-1">Off-the-Shelf Equipment</h3>
+                                <p class="text-green-100">Simple, proven pyrolysis technology available from multiple manufacturers</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 mr-4 mt-1 text-green-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-heading font-bold text-lg text-white mb-1">Continuous Process</h3>
+                                <p class="text-green-100">Efficient, automated systems that minimize labor requirements</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 mr-4 mt-1 text-green-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-heading font-bold text-lg text-white mb-1">Flexible Partnerships</h3>
+                                <p class="text-green-100">Work with any equipment manufacturer - we're not tied to specific suppliers</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 mr-4 mt-1 text-green-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-heading font-bold text-lg text-white mb-1">Low Barriers to Entry</h3>
+                                <p class="text-green-100">Minimal upfront investment with proven technology and processes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Simple pyrolysis equipment" class="rounded-lg shadow-xl w-full">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Steps -->
+    <section class="section-padding bg-gray-50">
+        <div class="container-custom">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-16 text-neutral-dark">
+                Our Partnership Process
+            </h2>
+            <div class="grid md:grid-cols-5 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-forest-green rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">1</div>
+                    <h3 class="font-heading text-lg font-bold text-neutral-dark mb-2">Assessment</h3>
+                    <p class="text-neutral-light text-sm">Site evaluation and feedstock analysis</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-clean-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">2</div>
+                    <h3 class="font-heading text-lg font-bold text-neutral-dark mb-2">Equipment</h3>
+                    <p class="text-neutral-light text-sm">Simple, cost-effective pyrolysis systems</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-warm-orange rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">3</div>
+                    <h3 class="font-heading text-lg font-bold text-neutral-dark mb-2">Production</h3>
+                    <p class="text-neutral-light text-sm">On-site biochar creation from waste</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-forest-green rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">4</div>
+                    <h3 class="font-heading text-lg font-bold text-neutral-dark mb-2">Verification</h3>
+                    <p class="text-neutral-light text-sm">Third-party carbon removal certification</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-clean-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">5</div>
+                    <h3 class="font-heading text-lg font-bold text-neutral-dark mb-2">Revenue</h3>
+                    <p class="text-neutral-light text-sm">Carbon credit sales and biochar product income</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accepted Feedstock -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold mb-8 text-neutral-dark">
+                        Accepted Feedstock Types
+                    </h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 mr-4 mt-0.5 text-forest-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-heading font-bold text-lg text-neutral-dark">Agricultural Waste & Crop Residues</h3>
+                                <p class="text-neutral-light">Rice hulls, wheat straw, corn stalks, sugarcane bagasse</p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 mr-4 mt-0.5 text-forest-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-heading font-bold text-lg text-neutral-dark">Forestry Waste & Wood Chips</h3>
+                                <p class="text-neutral-light">Sawmill waste, wood shavings, forest thinnings</p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 mr-4 mt-0.5 text-forest-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-heading font-bold text-lg text-neutral-dark">Food Processing Waste</h3>
+                                <p class="text-neutral-light">Fruit pits, nut shells, grain processing byproducts</p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 mr-4 mt-0.5 text-forest-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-heading font-bold text-lg text-neutral-dark">Any Organic Plant Material</h3>
+                                <p class="text-neutral-light">We evaluate all types of plant-based waste streams</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Various types of waste biomass" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Form -->
+    <section id="partnership-form" class="section-padding bg-forest-green text-white">
+        <div class="container-custom">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-8">
+                    Partnership Assessment Form
+                </h2>
+                <p class="text-xl text-center mb-12 text-green-100">
+                    Let's evaluate your waste biomass potential and design a custom partnership solution
+                </p>
+
+                <form class="grid md:grid-cols-2 gap-6" x-data="{ businessType: '', wasteType: '' }">
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium mb-2">Business Type *</label>
+                        <select x-model="businessType" class="w-full px-4 py-3 rounded-lg text-neutral-dark" required>
+                            <option value="">Select your business type</option>
+                            <option value="agricultural">Agricultural Business</option>
+                            <option value="forestry">Forestry Company</option>
+                            <option value="food-processing">Food Processing</option>
+                            <option value="waste-management">Waste Management</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Business Size</label>
+                        <select class="w-full px-4 py-3 rounded-lg text-neutral-dark">
+                            <option value="">Select business size</option>
+                            <option value="small">Small (1-50 employees)</option>
+                            <option value="medium">Medium (51-500 employees)</option>
+                            <option value="large">Large (500+ employees)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Waste Biomass Type *</label>
+                        <select x-model="wasteType" class="w-full px-4 py-3 rounded-lg text-neutral-dark" required>
+                            <option value="">Select waste type</option>
+                            <option value="agricultural-waste">Agricultural Waste/Crop Residues</option>
+                            <option value="forestry-waste">Forestry Waste/Wood Chips</option>
+                            <option value="food-processing-waste">Food Processing Waste</option>
+                            <option value="mixed">Mixed Organic Material</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Annual Waste Volume (tonnes)</label>
+                        <input type="number" class="w-full px-4 py-3 rounded-lg text-neutral-dark" placeholder="e.g. 1000">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Current Annual Disposal Costs ($)</label>
+                        <input type="number" class="w-full px-4 py-3 rounded-lg text-neutral-dark" placeholder="e.g. 50000">
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium mb-2">Location *</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg text-neutral-dark" placeholder="City, State/Region, Country" required>
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium mb-2">Revenue Expectations</label>
+                        <textarea class="w-full px-4 py-3 rounded-lg text-neutral-dark h-24" placeholder="What are your expectations for additional revenue from this partnership?"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Contact Name *</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg text-neutral-dark" required>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Email Address *</label>
+                        <input type="email" class="w-full px-4 py-3 rounded-lg text-neutral-dark" required>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Phone Number</label>
+                        <input type="tel" class="w-full px-4 py-3 rounded-lg text-neutral-dark">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Company Name *</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg text-neutral-dark" required>
+                    </div>
+
+                <div class="md:col-span-2">
+                    <button type="submit" class="btn-secondary w-full py-4 text-lg font-semibold">
+                        Submit Partnership Assessment
+                    </button>
+                </div>
+            </form>
+
+            <div class="mt-8 text-center">
+                <h3 class="font-heading text-xl font-bold mb-4">Next Steps</h3>
+                <div class="grid md:grid-cols-4 gap-4 text-green-100">
+                    <div>Site assessment scheduling</div>
+                    <div>Financial modeling</div>
+                    <div>Technical consultation</div>
+                    <div>Partnership agreement</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Mitigation & Guidance -->
+    <section class="section-padding bg-gray-50">
+        <div class="container-custom">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-16 text-neutral-dark">
+                Risk Mitigation & Expert Guidance
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="font-heading text-2xl font-bold mb-6 text-neutral-dark">
+                        We Guide Our Partners to Success
+                    </h3>
+                    <p class="text-lg mb-6 text-neutral-light leading-relaxed">
+                        Always Carbon provides comprehensive guidance throughout every step of your biochar project, ensuring success and maximizing your carbon credit potential.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-forest-green rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-lg text-neutral-dark mb-2">Carbon Credit Eligibility</h4>
+                                <p class="text-neutral-light">We use our expertise to ensure your project is eligible for and can sell carbon credits under recognized standards.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-clean-blue rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-lg text-neutral-dark mb-2">Technical Support</h4>
+                                <p class="text-neutral-light">Complete technical guidance from equipment selection to process optimization and quality control.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-warm-orange rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-lg text-neutral-dark mb-2">Success Alignment</h4>
+                                <p class="text-neutral-light">We're paid a percentage of carbon credits when issued, ensuring our success is directly tied to your project's success.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-forest-green rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-lg text-neutral-dark mb-2">Ongoing Partnership</h4>
+                                <p class="text-neutral-light">Long-term partnership approach ensures alignment throughout your entire project lifespan and beyond.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="font-heading text-xl font-bold mb-6 text-neutral-dark">Our Expertise Reduces Your Risk</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-forest-green" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-neutral-dark">Proven track record with major biochar projects</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-forest-green" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-neutral-dark">VCS registration expertise and carbon market knowledge</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-forest-green" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-neutral-dark">Global project experience across multiple regions</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-forest-green" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-neutral-dark">Engineering and carbon market expertise</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-forest-green" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-neutral-dark">No upfront consulting fees - success-based compensation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-dark text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="./images/Always Carbon Logo.png" alt="Always Carbon Logo" class="h-8 w-auto mr-3">
+                        <span class="font-heading font-bold text-lg">Always Carbon</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Permanently removing carbon from the atmosphere by delivering Biochar projects globally.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="./biomass-partners.html" class="hover:text-white transition-colors">Biomass Partners</a></li>
+                        <li><a href="./carbon-credits.html" class="hover:text-white transition-colors">Carbon Credits</a></li>
+                        <li><a href="./technology.html" class="hover:text-white transition-colors">Technology</a></li>
+                        <li><a href="./projects.html" class="hover:text-white transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="./about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="./blog.html" class="hover:text-white transition-colors">Resources</a></li>
+                        <li><a href="./contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold mb-4">Contact Info</h4>
+                    <div class="text-gray-300 space-y-2">
+                        <p>Sydney, Australia</p>
+                        <p>Global Operations</p>
+                        <a href="./contact.html" class="text-white hover:text-gray-200 transition-colors">Get in Touch →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2023 Always Carbon. All rights reserved. | Permanent carbon removal for a sustainable future.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

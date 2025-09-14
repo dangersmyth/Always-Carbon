@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Always Carbon - Permanent Carbon Removal Through Biochar Technology</title>
+    <meta name="description" content="Always Carbon transforms agricultural waste into permanent carbon removal. Partner with us to turn disposal costs into revenue while fighting climate change.">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50" x-data="{ mobileMenuOpen: false }">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="./images/Always Carbon Logo.png" alt="Always Carbon Logo" class="h-10 w-auto mr-3">
+                    <span class="font-heading font-bold text-xl text-forest-green">Always Carbon</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Home</a>
+                    <a href="#about" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">About</a>
+                    <div class="relative" x-data="{ servicesOpen: false }">
+                        <button @click="servicesOpen = !servicesOpen" class="font-medium text-neutral-dark hover:text-forest-green transition-colors flex items-center">
+                            Services
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="servicesOpen" @click.away="servicesOpen = false" class="absolute top-full left-0 bg-white shadow-lg rounded-md py-2 w-64 z-10">
+                            <a href="./biomass-partners.html" class="block px-4 py-2 text-sm text-neutral-dark hover:bg-gray-50">Biomass Partners</a>
+                            <a href="./carbon-credits.html" class="block px-4 py-2 text-sm text-neutral-dark hover:bg-gray-50">Carbon Credit Buyers</a>
+                        </div>
+                    </div>
+                    <a href="./projects.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Projects</a>
+                    <a href="./technology.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Technology</a>
+                    <a href="./blog.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Resources</a>
+                    <a href="./contact.html" class="btn-primary">Contact Us</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div x-show="mobileMenuOpen" class="md:hidden py-4 border-t">
+                <a href="#home" class="block py-2 text-neutral-dark hover:text-forest-green">Home</a>
+                <a href="#about" class="block py-2 text-neutral-dark hover:text-forest-green">About</a>
+                <a href="./biomass-partners.html" class="block py-2 text-neutral-dark hover:text-forest-green">Biomass Partners</a>
+                <a href="./carbon-credits.html" class="block py-2 text-neutral-dark hover:text-forest-green">Carbon Credits</a>
+                <a href="./projects.html" class="block py-2 text-neutral-dark hover:text-forest-green">Projects</a>
+                <a href="./technology.html" class="block py-2 text-neutral-dark hover:text-forest-green">Technology</a>
+                <a href="./blog.html" class="block py-2 text-neutral-dark hover:text-forest-green">Resources</a>
+                <a href="./contact.html" class="block py-2 text-forest-green font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 section-padding bg-gradient-to-r from-forest-green to-green-700 text-white">
+        <div class="container-custom">
+            <!-- Full-width Title -->
+            <div class="text-center mb-12">
+                <h1 class="font-heading text-3xl md:text-5xl font-bold mb-6 leading-relaxed">
+                    Partner With Us to Transform Your Waste Plant Biomass Into New Revenue Streams
+                </h1>
+            </div>
+            
+            <!-- Two-column content below title -->
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <p class="text-xl mb-6 text-green-100 leading-relaxed">
+                        Our goal is to deliver profitable, sustainable biochar projects that turn waste plant biomass into permanent carbon storage while creating new revenue streams.
+                    </p>
+                    <p class="text-lg mb-4 text-green-200 leading-relaxed">
+                        We turn our project partners' waste plant biomass into new revenue by converting it into useful biochar. Australia needs 100+ million tons of CO₂ removed annually by 2050.
+                    </p>
+                    <p class="text-lg mb-8 text-green-200 leading-relaxed">
+                        <strong>If you have waste biomass (any type of plant material), please do get in touch.</strong> We partner with agricultural businesses to transform waste biomass into useful biochar and verified carbon credits.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="./biomass-partners.html" class="btn-secondary text-center">
+                            Partner with Us - Transform Waste into Revenue
+                        </a>
+                        <a href="./carbon-credits.html" class="bg-white text-forest-green px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 text-center">
+                            Buy Carbon Credits - Verified Permanent Removal
+                        </a>
+                    </div>
+                    
+                    <!-- Revenue Sharing Value Proposition -->
+                    <div class="bg-white/95 border-2 border-white/50 rounded-lg p-6 mb-8 shadow-xl">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-4">
+                                <svg class="w-8 h-8 text-forest-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">💰 No Upfront Costs - We Succeed When You Succeed</h3>
+                                <p class="text-white leading-relaxed">
+                                    We're paid a percentage of carbon credits when issued, ensuring alignment throughout your entire project lifespan. No upfront consulting fees, no financial barriers to entry. Our success is directly tied to your project's success.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="./images/biochar_production_facility.jpg" alt="Biochar production facility" class="rounded-lg shadow-2xl w-full">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-heading text-2xl md:text-3xl font-bold mb-6 text-neutral-dark">
+                    Beyond Biochar: Comprehensive Carbon Solutions
+                </h2>
+                <p class="text-lg text-neutral-light leading-relaxed mb-8">
+                    In addition to biochar production, Always Carbon works with a wide range of carbon removal and carbon avoidance project partners. If you have a project that is making a positive difference in the fight against climate change, and building a more sustainable economy, we would love to hear from you and explore how we can help.
+                </p>
+                <a href="./contact.html" class="btn-primary">Explore Partnership Opportunities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Stats Section -->
+    <section class="section-padding bg-gray-50">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-forest-green mb-2">900+</div>
+                    <div class="text-neutral-dark font-medium">Years Carbon Storage</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-clean-blue mb-2">Global</div>
+                    <div class="text-neutral-dark font-medium">Project Reach</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-warm-orange mb-2">Verified</div>
+                    <div class="text-neutral-dark font-medium">Carbon Removal</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-forest-green mb-2">Partner</div>
+                    <div class="text-neutral-dark font-medium">Focused Approach</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-16 text-neutral-dark">
+                Two Pathways to Carbon Impact
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Biomass Partners -->
+                <div class="bg-forest-green text-white p-8 rounded-lg">
+                    <h3 class="font-heading text-2xl font-bold mb-4">For Biomass Partners</h3>
+                    <p class="text-lg mb-6 text-green-100">Turn disposal costs into profit centers</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-0.5 text-green-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Transform waste biomass into revenue streams
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-0.5 text-green-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Simple pyrolysis technology implementation
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-0.5 text-green-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Technical support and revenue sharing
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-0.5 text-green-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Reduce waste disposal costs
+                        </li>
+                    </ul>
+                    <a href="./biomass-partners.html" class="bg-white text-forest-green px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 inline-block">
+                        Explore Partnership →
+                    </a>
+                </div>
+
+                <!-- Carbon Credit Buyers -->
+                <div class="bg-clean-blue text-white p-8 rounded-lg">
+                    <h3 class="font-heading text-2xl font-bold mb-4">For Carbon Credit Buyers</h3>
+                    <p class="text-lg mb-6 text-blue-100">Verified permanent carbon removal at scale</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-0.5 text-blue-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            900+ years permanent carbon storage
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-0.5 text-blue-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Third-party verified and certified
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-0.5 text-blue-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Scalable across multiple projects
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-0.5 text-blue-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Meet corporate net-zero commitments
+                        </li>
+                    </ul>
+                    <a href="./carbon-credits.html" class="bg-white text-clean-blue px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 inline-block">
+                        Explore Carbon Credits →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="section-padding bg-gray-50">
+        <div class="container-custom">
+            <h2 class="font-heading text-3xl font-bold text-center mb-12 text-neutral-dark">
+                Trusted by Industry Leaders
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                        <h3 class="font-heading text-xl font-bold text-forest-green mb-2">Major Projects</h3>
+                        <p class="text-neutral-dark">Kangaroo Island "largest biochar project in the world"</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                        <h3 class="font-heading text-xl font-bold text-clean-blue mb-2">Global Reach</h3>
+                        <p class="text-neutral-dark">Projects across Australia, Vietnam, and internationally</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                        <h3 class="font-heading text-xl font-bold text-warm-orange mb-2">Expert Team</h3>
+                        <p class="text-neutral-dark">World-class engineering and carbon market expertise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-neutral-dark text-white">
+        <div class="container-custom text-center">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6">
+                Ready to Transform Waste into Impact?
+            </h2>
+            <p class="text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                Join us in creating permanent carbon removal solutions that benefit your business and the planet.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="./contact.html" class="btn-primary">Get Started Today</a>
+                <a href="./about.html" class="btn-secondary">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-forest-green text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="./images/Always Carbon Logo.png" alt="Always Carbon Logo" class="h-8 w-auto mr-3">
+                        <span class="font-heading font-bold text-lg">Always Carbon</span>
+                    </div>
+                    <p class="text-green-100 mb-4">
+                        Permanently removing carbon from the atmosphere by delivering Biochar projects globally.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-green-100">
+                        <li><a href="./biomass-partners.html" class="hover:text-white transition-colors">Biomass Partners</a></li>
+                        <li><a href="./carbon-credits.html" class="hover:text-white transition-colors">Carbon Credits</a></li>
+                        <li><a href="./technology.html" class="hover:text-white transition-colors">Technology</a></li>
+                        <li><a href="./projects.html" class="hover:text-white transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-green-100">
+                        <li><a href="./about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="./blog.html" class="hover:text-white transition-colors">Resources</a></li>
+                        <li><a href="./contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold mb-4">Contact Info</h4>
+                    <div class="text-green-100 space-y-2">
+                        <p>Sydney, Australia</p>
+                        <p>Global Operations</p>
+                        <a href="./contact.html" class="text-white hover:text-green-200 transition-colors">Get in Touch →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-green-800 mt-8 pt-8 text-center text-green-100">
+                <p>&copy; 2023 Always Carbon. All rights reserved. | Permanent carbon removal for a sustainable future.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

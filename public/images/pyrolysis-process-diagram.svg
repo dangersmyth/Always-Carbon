@@ -1,0 +1,174 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2D5016">Biochar Pyrolysis Process</text>
+  <text x="500" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">High-Temperature Conversion of Biomass to Permanent Carbon Storage</text>
+  
+  <!-- Process Flow Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2D5016"/>
+    </marker>
+  </defs>
+  
+  <!-- Step 1: Biomass Input -->
+  <g id="step1">
+    <rect x="50" y="150" width="140" height="100" rx="10" fill="#2D5016" stroke="#1a3a0a" stroke-width="2"/>
+    <text x="120" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">1. Biomass</text>
+    <text x="120" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Collection</text>
+    <text x="120" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e5f3e5">Agricultural Waste</text>
+    <text x="120" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e5f3e5">Forestry Residues</text>
+    <text x="120" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e5f3e5">Organic Material</text>
+    
+    <!-- Biomass icon -->
+    <circle cx="120" cy="120" r="20" fill="#4ade80" stroke="#22c55e" stroke-width="2"/>
+    <path d="M105 115 Q120 105 135 115 Q130 125 120 130 Q110 125 105 115" fill="#166534"/>
+    <path d="M105 115 Q120 120 135 115 M105 125 Q120 130 135 125" stroke="#166534" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <line x1="200" y1="200" x2="240" y2="200" stroke="#2D5016" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: Preparation -->
+  <g id="step2">
+    <rect x="260" y="150" width="140" height="100" rx="10" fill="#1E88E5" stroke="#1565c0" stroke-width="2"/>
+    <text x="330" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">2. Preparation</text>
+    <text x="330" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Processing</text>
+    <text x="330" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e3f2fd">Size Reduction</text>
+    <text x="330" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e3f2fd">Moisture Control</text>
+    <text x="330" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e3f2fd">Quality Check</text>
+    
+    <!-- Preparation icon -->
+    <rect x="315" y="115" width="30" height="10" rx="5" fill="#60a5fa" stroke="#3b82f6" stroke-width="2"/>
+    <rect x="320" y="105" width="20" height="5" rx="2" fill="#60a5fa"/>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <line x1="410" y1="200" x2="450" y2="200" stroke="#2D5016" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3: Pyrolysis Reactor -->
+  <g id="step3">
+    <rect x="470" y="100" width="140" height="200" rx="10" fill="#FF7043" stroke="#e65100" stroke-width="2"/>
+    <text x="540" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">3. Pyrolysis</text>
+    <text x="540" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Reactor</text>
+    
+    <!-- Temperature indicators -->
+    <text x="540" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#fff3e0">400-700°C</text>
+    <text x="540" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#fff3e0">Low Oxygen</text>
+    <text x="540" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#fff3e0">Controlled</text>
+    <text x="540" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#fff3e0">Environment</text>
+    
+    <!-- Reactor vessel -->
+    <ellipse cx="540" cy="230" rx="50" ry="30" fill="#ffab91" stroke="#ff5722" stroke-width="2"/>
+    <rect x="490" y="200" width="100" height="60" fill="#ffab91" stroke="#ff5722" stroke-width="2"/>
+    
+    <!-- Heat lines -->
+    <g stroke="#ffeb3b" stroke-width="2" fill="none">
+      <path d="M510 220 Q520 210 530 220 Q540 210 550 220 Q560 210 570 220" opacity="0.8"/>
+      <path d="M510 240 Q520 230 530 240 Q540 230 550 240 Q560 230 570 240" opacity="0.6"/>
+    </g>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <line x1="620" y1="200" x2="660" y2="200" stroke="#2D5016" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 4: Output Separation -->
+  <g id="step4">
+    <rect x="680" y="150" width="140" height="100" rx="10" fill="#8e24aa" stroke="#6a1b9a" stroke-width="2"/>
+    <text x="750" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">4. Separation</text>
+    <text x="750" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Output</text>
+    <text x="750" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#f3e5f5">Biochar (Solid)</text>
+    <text x="750" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#f3e5f5">Syngas (Gas)</text>
+    <text x="750" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#f3e5f5">Bio-oil (Liquid)</text>
+    
+    <!-- Separation icon -->
+    <circle cx="730" cy="120" r="8" fill="#ce93d8"/>
+    <circle cx="750" cy="120" r="8" fill="#ab47bc"/>
+    <circle cx="770" cy="120" r="8" fill="#9c27b0"/>
+  </g>
+  
+  <!-- Biochar Output (Main Product) -->
+  <g id="biochar-output">
+    <!-- Arrow down from separation -->
+    <line x1="750" y1="260" x2="750" y2="320" stroke="#2D5016" stroke-width="3" marker-end="url(#arrowhead)"/>
+    
+    <rect x="650" y="340" width="200" height="120" rx="10" fill="#2D5016" stroke="#1a3a0a" stroke-width="3"/>
+    <text x="750" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">BIOCHAR</text>
+    <text x="750" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4ade80">Permanent Carbon Storage</text>
+    <text x="750" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#e5f3e5">900+ Years Permanence</text>
+    <text x="750" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#e5f3e5">Soil Amendment</text>
+    <text x="750" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#e5f3e5">Carbon Credits</text>
+    <text x="750" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#e5f3e5">Revenue Generation</text>
+    
+    <!-- Biochar particle representation -->
+    <rect x="720" y="320" width="60" height="15" rx="7" fill="#374151" opacity="0.8"/>
+    <rect x="730" y="315" width="40" height="10" rx="5" fill="#374151" opacity="0.6"/>
+  </g>
+  
+  <!-- By-products -->
+  <g id="byproducts">
+    <!-- Syngas arrow -->
+    <line x1="750" y1="160" x2="750" y2="120" stroke="#1E88E5" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="760" y="115" font-family="Arial, sans-serif" font-size="10" fill="#1E88E5">Syngas</text>
+    <text x="760" y="105" font-family="Arial, sans-serif" font-size="10" fill="#1E88E5">Energy</text>
+    
+    <!-- Bio-oil arrow -->
+    <line x1="750" y1="160" x2="850" y2="120" stroke="#FF7043" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="860" y="115" font-family="Arial, sans-serif" font-size="10" fill="#FF7043">Bio-oil</text>
+    <text x="860" y="105" font-family="Arial, sans-serif" font-size="10" fill="#FF7043">Fuel</text>
+  </g>
+  
+  <!-- Process Benefits -->
+  <g id="benefits">
+    <rect x="50" y="480" width="900" height="100" rx="10" fill="#f8fafc" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="500" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2D5016">Process Benefits</text>
+    
+    <!-- Benefit items -->
+    <g transform="translate(100, 520)">
+      <circle cx="0" cy="0" r="4" fill="#2D5016"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="12" fill="#374151">Permanent carbon removal (900+ years)</text>
+    </g>
+    
+    <g transform="translate(100, 540)">
+      <circle cx="0" cy="0" r="4" fill="#2D5016"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="12" fill="#374151">Multiple revenue streams from by-products</text>
+    </g>
+    
+    <g transform="translate(100, 560)">
+      <circle cx="0" cy="0" r="4" fill="#2D5016"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="12" fill="#374151">Soil health improvement and water retention</text>
+    </g>
+    
+    <g transform="translate(500, 520)">
+      <circle cx="0" cy="0" r="4" fill="#2D5016"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="12" fill="#374151">Waste disposal cost elimination</text>
+    </g>
+    
+    <g transform="translate(500, 540)">
+      <circle cx="0" cy="0" r="4" fill="#2D5016"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="12" fill="#374151">Scalable technology for any size operation</text>
+    </g>
+    
+    <g transform="translate(500, 560)">
+      <circle cx="0" cy="0" r="4" fill="#2D5016"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="12" fill="#374151">Third-party verified carbon removal credits</text>
+    </g>
+  </g>
+  
+  <!-- Carbon Flow Indicators -->
+  <g id="carbon-flow">
+    <!-- CO2 capture -->
+    <g opacity="0.7">
+      <path d="M120 80 Q200 60 330 80 Q450 60 540 80" stroke="#22c55e" stroke-width="3" fill="none" stroke-dasharray="10,5"/>
+      <text x="330" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#22c55e">CO₂ Capture from Atmosphere</text>
+    </g>
+    
+    <!-- Carbon storage -->
+    <g opacity="0.7">
+      <path d="M750 280 Q750 300 750 320" stroke="#2D5016" stroke-width="4" fill="none"/>
+      <text x="760" y="305" font-family="Arial, sans-serif" font-size="10" fill="#2D5016">Carbon Storage</text>
+    </g>
+  </g>
+</svg>
