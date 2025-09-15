@@ -21,19 +21,9 @@
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="./index.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Home</a>
-                    <a href="#about" class="font-medium text-forest-green font-semibold">About</a>
-                    <div class="relative" x-data="{ servicesOpen: false }">
-                        <button @click="servicesOpen = !servicesOpen" class="font-medium text-neutral-dark hover:text-forest-green transition-colors flex items-center">
-                            Services
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <div x-show="servicesOpen" @click.away="servicesOpen = false" class="absolute top-full left-0 bg-white shadow-lg rounded-md py-2 w-64 z-10">
-                            <a href="./biomass-partners.html" class="block px-4 py-2 text-sm text-neutral-dark hover:bg-gray-50">Biomass Partners</a>
-                            <a href="./carbon-credits.html" class="block px-4 py-2 text-sm text-neutral-dark hover:bg-gray-50">Carbon Credit Buyers</a>
-                        </div>
-                    </div>
+                    <a href="#about" class="font-medium text-forest-green font-semibold">About Us</a>
+                    <a href="./biomass-partners.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Biomass Partners</a>
+                    <a href="./carbon-credits.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Carbon Credit Buyers</a>
                     <a href="./projects.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Projects</a>
                     <a href="./technology.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Technology</a>
                     <a href="./blog.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Resources</a>
@@ -51,7 +41,7 @@
             <!-- Mobile Menu -->
             <div x-show="mobileMenuOpen" class="md:hidden py-4 border-t">
                 <a href="./index.html" class="block py-2 text-neutral-dark hover:text-forest-green">Home</a>
-                <a href="#about" class="block py-2 text-forest-green font-semibold">About</a>
+                <a href="#about" class="block py-2 text-forest-green font-semibold">About Us</a>
                 <a href="./biomass-partners.html" class="block py-2 text-neutral-dark hover:text-forest-green">Biomass Partners</a>
                 <a href="./carbon-credits.html" class="block py-2 text-neutral-dark hover:text-forest-green">Carbon Credits</a>
                 <a href="./projects.html" class="block py-2 text-neutral-dark hover:text-forest-green">Projects</a>
@@ -122,6 +112,12 @@
                             <div>
                                 <h3 class="font-heading text-2xl font-bold text-neutral-dark">James Stewart</h3>
                                 <p class="text-forest-green font-semibold">CEO & Founder</p>
+                                <a href="https://www.linkedin.com/in/james-stewart-a38626/" target="_blank" class="inline-flex items-center text-sm text-neutral-dark hover:text-forest-green transition-colors mt-1">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                    LinkedIn Profile
+                                </a>
                             </div>
                         </div>
                         <div class="mb-6">
@@ -186,7 +182,13 @@
                             </div>
                             <div>
                                 <h3 class="font-heading text-2xl font-bold text-neutral-dark">Michael Hallam</h3>
-                                <p class="text-clean-blue font-semibold">Co-Founder</p>
+                                <p class="text-neutral-dark font-semibold">Co-Founder</p>
+                                <a href="https://www.linkedin.com/in/michael-hallam-919135148/" target="_blank" class="inline-flex items-center text-sm text-neutral-dark hover:text-forest-green transition-colors mt-1">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                    LinkedIn Profile
+                                </a>
                             </div>
                         </div>
                         <div class="mb-6">

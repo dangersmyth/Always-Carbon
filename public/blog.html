@@ -21,19 +21,9 @@
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="./index.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Home</a>
-                    <a href="./about.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">About</a>
-                    <div class="relative" x-data="{ servicesOpen: false }">
-                        <button @click="servicesOpen = !servicesOpen" class="font-medium text-neutral-dark hover:text-forest-green transition-colors flex items-center">
-                            Services
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <div x-show="servicesOpen" @click.away="servicesOpen = false" class="absolute top-full left-0 bg-white shadow-lg rounded-md py-2 w-64 z-10">
-                            <a href="./biomass-partners.html" class="block px-4 py-2 text-sm text-neutral-dark hover:bg-gray-50">Biomass Partners</a>
-                            <a href="./carbon-credits.html" class="block px-4 py-2 text-sm text-neutral-dark hover:bg-gray-50">Carbon Credit Buyers</a>
-                        </div>
-                    </div>
+                    <a href="./about.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">About Us</a>
+                    <a href="./biomass-partners.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Biomass Partners</a>
+                    <a href="./carbon-credits.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Carbon Credit Buyers</a>
                     <a href="./projects.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Projects</a>
                     <a href="./technology.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Technology</a>
                     <a href="./blog.html" class="font-medium text-forest-green transition-colors">Resources</a>
@@ -51,7 +41,7 @@
             <!-- Mobile Menu -->
             <div x-show="mobileMenuOpen" class="md:hidden py-4 border-t">
                 <a href="./index.html" class="block py-2 text-neutral-dark hover:text-forest-green">Home</a>
-                <a href="./about.html" class="block py-2 text-neutral-dark hover:text-forest-green">About</a>
+                <a href="./about.html" class="block py-2 text-neutral-dark hover:text-forest-green">About Us</a>
                 <a href="./biomass-partners.html" class="block py-2 text-neutral-dark hover:text-forest-green">Biomass Partners</a>
                 <a href="./carbon-credits.html" class="block py-2 text-neutral-dark hover:text-forest-green">Carbon Credits</a>
                 <a href="./projects.html" class="block py-2 text-neutral-dark hover:text-forest-green">Projects</a>
