@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Insights - Always Carbon</title>
+    <meta name="description" content="Strategic insights on biochar carbon removal, agricultural waste transformation, and corporate sustainability from Always Carbon experts.">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50" x-data="{ mobileMenuOpen: false }">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="../images/Always Carbon Logo.png" alt="Always Carbon Logo" class="h-10 w-auto mr-3">
+                    <span class="font-heading font-bold text-xl text-forest-green">Always Carbon</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Home</a>
+                    <a href="../about.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">About Us</a>
+                    <a href="../biomass-partners.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Biomass Partners</a>
+                    <a href="../carbon-credits.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Carbon Credit Buyers</a>
+                    <a href="../projects.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Projects</a>
+                    <a href="../technology.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Technology</a>
+                    <a href="./" class="font-medium text-forest-green transition-colors">Resources</a>
+                    <a href="../contact.html" class="btn-primary">Contact Us</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div x-show="mobileMenuOpen" class="md:hidden py-4 border-t">
+                <a href="../index.html" class="block py-2 text-neutral-dark hover:text-forest-green">Home</a>
+                <a href="../about.html" class="block py-2 text-neutral-dark hover:text-forest-green">About Us</a>
+                <a href="../biomass-partners.html" class="block py-2 text-neutral-dark hover:text-forest-green">Biomass Partners</a>
+                <a href="../carbon-credits.html" class="block py-2 text-neutral-dark hover:text-forest-green">Carbon Credits</a>
+                <a href="../projects.html" class="block py-2 text-neutral-dark hover:text-forest-green">Projects</a>
+                <a href="../technology.html" class="block py-2 text-neutral-dark hover:text-forest-green">Technology</a>
+                <a href="./" class="block py-2 text-forest-green">Resources</a>
+                <a href="../contact.html" class="block py-2 text-forest-green font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 section-padding bg-gradient-to-r from-forest-green to-green-700 text-white">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="font-heading text-4xl md:text-5xl font-bold mb-6">
+                    Strategic Insights on Carbon Removal
+                </h1>
+                <p class="text-xl mb-8 text-green-100">
+                    Expert analysis on biochar technology, market opportunities, and sustainable business transformation from Always Carbon's industry leaders.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                         alt="Agricultural waste biomass piles"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3 text-sm text-gray-600">
+                            <span>December 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>15 min read</span>
+                        </div>
+                        <h2 class="font-heading text-xl font-bold mb-3 text-neutral-dark line-clamp-2">
+                            Why Australia's $2 Billion Agricultural Waste Problem is Actually a $10 Billion Carbon Opportunity
+                        </h2>
+                        <p class="text-gray-700 mb-4 line-clamp-3">
+                            Discover how biochar technology is transforming agricultural waste into valuable carbon credits and revenue streams for Australian farmers and agribusinesses.
+                        </p>
+                        <a href="./agricultural-waste-opportunity.html" class="btn-primary text-sm">Read Full Article</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                         alt="Corporate sustainability and carbon strategy"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3 text-sm text-gray-600">
+                            <span>December 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>18 min read</span>
+                        </div>
+                        <h2 class="font-heading text-xl font-bold mb-3 text-neutral-dark line-clamp-2">
+                            Corporate Climate Goals: Why 900+ Year Carbon Storage Beats Tree Planting Every Time
+                        </h2>
+                        <p class="text-gray-700 mb-4 line-clamp-3">
+                            Learn why leading corporations are choosing biochar's permanent carbon storage over traditional offset methods for their net-zero strategies.
+                        </p>
+                        <a href="./corporate-climate-goals.html" class="btn-primary text-sm">Read Full Article</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                         alt="Technology and innovation in carbon removal"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3 text-sm text-gray-600">
+                            <span>December 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>14 min read</span>
+                        </div>
+                        <h2 class="font-heading text-xl font-bold mb-3 text-neutral-dark line-clamp-2">
+                            From Microsoft to Shopify: Why Tech Giants Are Betting Big on Biochar Carbon Removal
+                        </h2>
+                        <p class="text-gray-700 mb-4 line-clamp-3">
+                            Explore how major tech companies are leading the shift to permanent carbon removal and what this means for the biochar industry.
+                        </p>
+                        <a href="./tech-giants-biochar.html" class="btn-primary text-sm">Read Full Article</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                         alt="Agricultural business and farming operations"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3 text-sm text-gray-600">
+                            <span>December 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>20 min read</span>
+                        </div>
+                        <h2 class="font-heading text-xl font-bold mb-3 text-neutral-dark line-clamp-2">
+                            The Complete Guide to Biochar Business Models: How Australian Agribusiness Can Generate $50,000+ Per Year from Waste
+                        </h2>
+                        <p class="text-gray-700 mb-4 line-clamp-3">
+                            A comprehensive business guide showing how agricultural operations can transform waste into profitable biochar partnerships.
+                        </p>
+                        <a href="./business-models-guide.html" class="btn-primary text-sm">Read Full Article</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="../images/5th_image.jpg"
+                         alt="Southeast Asia rice farming and agriculture"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3 text-sm text-gray-600">
+                            <span>December 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>16 min read</span>
+                        </div>
+                        <h2 class="font-heading text-xl font-bold mb-3 text-neutral-dark line-clamp-2">
+                            Southeast Asia's Carbon Gold Rush: Why Australian Biochar Technology is Conquering Asian Markets
+                        </h2>
+                        <p class="text-gray-700 mb-4 line-clamp-3">
+                            Analyze the explosive growth of Southeast Asia's carbon market and Australia's competitive advantages in biochar technology export.
+                        </p>
+                        <a href="./southeast-asia-markets.html" class="btn-primary text-sm">Read Full Article</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-neutral-dark text-white">
+        <div class="container-custom text-center">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6">
+                Ready to Transform Your Carbon Strategy?
+            </h2>
+            <p class="text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                Whether you're looking to convert waste into revenue or secure permanent carbon removal credits, Always Carbon has the expertise and technology to deliver results.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="../contact.html" class="btn-primary">Start Your Project</a>
+                <a href="./biomass-partners.html" class="btn-secondary">Explore Partnerships</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-forest-green text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="../images/Always Carbon Logo.png" alt="Always Carbon Logo" class="h-8 w-auto mr-3">
+                        <span class="font-heading font-bold text-lg">Always Carbon</span>
+                    </div>
+                    <p class="text-green-100 mb-4">
+                        Permanently removing carbon from the atmosphere by delivering Biochar projects globally.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-green-100">
+                        <li><a href="./biomass-partners.html" class="hover:text-white transition-colors">Biomass Partners</a></li>
+                        <li><a href="../carbon-credits.html" class="hover:text-white transition-colors">Carbon Credits</a></li>
+                        <li><a href="../technology.html" class="hover:text-white transition-colors">Technology</a></li>
+                        <li><a href="../projects.html" class="hover:text-white transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-green-100">
+                        <li><a href="../about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="./" class="hover:text-white transition-colors">Resources</a></li>
+                        <li><a href="../contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold mb-4">Contact Info</h4>
+                    <div class="text-green-100 space-y-2">
+                        <p>Sydney, Australia</p>
+                        <p>Global Operations</p>
+                        <a href="../contact.html" class="text-white hover:text-green-200 transition-colors">Get in Touch →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-green-800 mt-8 pt-8 text-center text-green-100">
+                <p>&copy; 2023 Always Carbon. All rights reserved. | Permanent carbon removal for a sustainable future.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

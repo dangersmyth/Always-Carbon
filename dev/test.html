@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page - Always Carbon</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50" x-data="{ mobileMenuOpen: false }">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="font-heading font-bold text-xl text-forest-green">Test Page</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="./index.html" class="font-medium text-neutral-dark hover:text-forest-green transition-colors">Home</a>
+                    <a href="./test.html" class="font-medium text-forest-green font-semibold">Test</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-forest-green text-white pt-24">
+        <div class="container-custom section-padding">
+            <div class="text-center">
+                <h1 class="font-heading font-bold text-4xl md:text-6xl mb-6">Layout Test Page</h1>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Testing responsive layout, container widths, and spacing across all device sizes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Container Test Section -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <h2 class="font-heading font-bold text-3xl text-center mb-12 text-neutral-dark">Container Width Test</h2>
+            <div class="bg-clean-blue text-white p-8 rounded-lg mb-8">
+                <h3 class="font-heading font-bold text-xl mb-4">Full Width Container</h3>
+                <p>This blue container should use the full available width with proper responsive padding. Check margins on mobile, tablet, and desktop.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-warm-orange text-white p-6 rounded-lg">
+                    <h3 class="font-heading font-bold text-lg mb-3">Left Column</h3>
+                    <p>Text should not be cramped to the left. Proper spacing and alignment across all screen sizes.</p>
+                </div>
+                <div class="bg-forest-green text-white p-6 rounded-lg">
+                    <h3 class="font-heading font-bold text-lg mb-3">Right Column</h3>
+                    <p>Grid layout should work properly on desktop and stack on mobile without layout issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spacing Test Section -->
+    <section class="bg-gray-50 section-padding">
+        <div class="container-custom">
+            <h2 class="font-heading font-bold text-3xl text-center mb-12 text-neutral-dark">Spacing & Typography Test</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-heading font-bold text-xl mb-3 text-forest-green">Mobile (320px+)</h3>
+                    <p class="text-neutral-light mb-4">Content should have proper spacing and not appear cramped on mobile devices.</p>
+                    <ul class="space-y-2 text-neutral-dark">
+                        <li>✓ Proper padding</li>
+                        <li>✓ Readable text</li>
+                        <li>✓ No overflow</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-heading font-bold text-xl mb-3 text-clean-blue">Tablet (768px+)</h3>
+                    <p class="text-neutral-light mb-4">Grid should start showing multiple columns with increased spacing.</p>
+                    <ul class="space-y-2 text-neutral-dark">
+                        <li>✓ Grid columns</li>
+                        <li>✓ Increased padding</li>
+                        <li>✓ Better spacing</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-heading font-bold text-xl mb-3 text-warm-orange">Desktop (1024px+)</h3>
+                    <p class="text-neutral-light mb-4">Full desktop layout with maximum container width and optimal spacing.</p>
+                    <ul class="space-y-2 text-neutral-dark">
+                        <li>✓ Max width container</li>
+                        <li>✓ Optimal spacing</li>
+                        <li>✓ Full layout</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button Test Section -->
+    <section class="section-padding">
+        <div class="container-custom text-center">
+            <h2 class="font-heading font-bold text-3xl mb-8 text-neutral-dark">Button & Component Test</h2>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <button class="btn-primary">Primary Button</button>
+                <button class="btn-secondary">Secondary Button</button>
+            </div>
+            <p class="text-neutral-light max-w-2xl mx-auto">Buttons should be properly sized with adequate touch targets and consistent spacing.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-dark text-white section-padding">
+        <div class="container-custom text-center">
+            <p>&copy; 2024 Always Carbon - Test Page</p>
+        </div>
+    </footer>
+</body>
+</html>
